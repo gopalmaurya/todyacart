@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <table class="table table-striped">
+        <tr>
+            <th>productID</th>
+            <th>productname</th>
+            <th>prise</th>
+            <th>discount</th>
+            <th>color</th>
+            <th>Deleat</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>kurti</td>
+            <td><i class="btn btn-outline-success">300</i></td>
+            <td><i class="btn btn-outline-danger"><del>600/-</del></i> </td>
+            <td><input type="color"/></td>
+            <td><input type="submit" value="Deleat"/></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
